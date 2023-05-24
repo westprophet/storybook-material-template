@@ -1,0 +1,30 @@
+@import 'react-responsive-tools-scss';
+
+.MobileSidebar {
+  width: 250px;
+  height: calc(100vh - var(--header-height));
+  background-color: white;
+  transform: translateX(-100%);
+  transition: .3s;
+  left: 0;
+  top:var(--header-height);
+  position: absolute;
+  z-index: 5;
+  display: grid;
+  grid-template-rows: auto min-content;
+  padding-left: var(--screen-padding);
+  &.right{
+    right: 0;
+    left: auto;
+    transform: translateX(100%);
+  }
+  &.open{
+    transition: .3s;
+    transform: translateX(0);
+  }
+
+}
+.back{
+  z-index: 3;
+  display: grid;
+}

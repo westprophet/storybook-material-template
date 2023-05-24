@@ -1,0 +1,40 @@
+@import "react-responsive-tools-scss";
+.DevStatus {
+  position: fixed;
+  background-color: lightgrey;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  width: max-content;
+  border-radius: 5px 0px 0px 0px;
+  padding: 2px 5px;
+  font-size: 9px;
+  transform: translateY(13px);
+  font-family: Roboto, sans-serif;
+  @include for-xxl{
+    font-size: 12px;
+    transform: translateY(18px);
+  }
+  display: grid;
+  opacity: .8;
+
+  transition: 300ms;
+
+  &:hover {
+    transition: 300ms;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &:global {
+    &.test {
+      &:hover {
+        background-color: greenyellow;
+      }
+    }
+
+    &.development {
+      background-color: orange;
+    }
+  }
+}

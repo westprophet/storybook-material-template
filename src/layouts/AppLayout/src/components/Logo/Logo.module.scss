@@ -1,0 +1,29 @@
+@import 'react-responsive-tools-scss';
+
+.Logo {
+  display: flex;
+  align-items: center;
+  --size: 32px;
+  height: var(--header-height);
+  grid-template-columns: var(--def-aside-column-width) auto;
+  gap: 10px;
+  @include for-lg {
+    --size: 45px;
+  }
+  .container{
+    width: var(--def-aside-column-width);
+    display: flex;
+    justify-content: center;
+    img{
+      width:var(--size);
+      height:var(--size);
+    }
+  }
+  .title{
+    @include for-lg{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+}

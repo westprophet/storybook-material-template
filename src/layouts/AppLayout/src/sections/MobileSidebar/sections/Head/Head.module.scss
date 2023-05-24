@@ -1,0 +1,9 @@
+@import 'react-responsive-tools-scss';
+
+.Head {
+  display: grid;
+  grid-row: 1;
+  //grid-template-columns: var(--def-aside-width) auto;
+  align-items: center;
+  align-self: start;
+}

@@ -1,0 +1,10 @@
+@import 'react-responsive-tools-scss';
+
+.Bottom {
+  display: grid;
+  border-top: 1px solid var(--bg-300);
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+  align-self: end;
+}

@@ -1,0 +1,10 @@
+@import 'react-responsive-tools-scss';
+
+.MobileMenuButton {
+  color: inherit;
+  align-self: center;
+  justify-self: center;
+  @include for-lg {
+    display: none;
+  }
+}

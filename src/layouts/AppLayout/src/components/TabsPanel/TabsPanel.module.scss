@@ -1,0 +1,28 @@
+@import "react-responsive-tools-scss";
+
+.TabsPanel {
+  width: 100%;
+  display: flex;
+  height: min-content;
+  flex-direction: column;
+  @include for-lg{
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bg-300);
+  }
+  .left{
+    position: sticky;
+    left: 0;
+  }
+  .right {
+    height: 100%;
+    width: 100%;
+    @include for-lg {
+      width: max-content;
+      display: flex;
+      align-items: center;
+      padding: 0 var(--inner-padding);
+      align-self: center;
+    }
+  }
+}

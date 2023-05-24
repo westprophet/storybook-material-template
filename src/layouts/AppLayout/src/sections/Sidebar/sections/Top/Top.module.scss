@@ -1,0 +1,11 @@
+@import 'react-responsive-tools-scss';
+
+.Top {
+  height: 40px;
+  display: grid;
+  align-items: center;
+  grid-row: 2;
+  justify-content: space-between;
+  justify-items: center;
+  align-self: start;
+}

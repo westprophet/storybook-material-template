@@ -1,0 +1,7 @@
+@import "react-responsive-tools-scss";
+
+.FixColumn {
+  width: var(--def-aside-column-width);
+  display: flex;
+  justify-content: center;
+}

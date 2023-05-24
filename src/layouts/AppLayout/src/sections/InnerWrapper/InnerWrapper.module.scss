@@ -1,0 +1,13 @@
+@import 'react-responsive-tools-scss';
+
+.InnerWrapper {
+  width: 100%;
+  max-height: calc(100vh - var(--header-height));
+  height: 100%;
+  overflow-y: auto;
+
+  @include for-lg {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}

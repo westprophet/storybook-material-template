@@ -1,0 +1,55 @@
+.MenuItem {
+  min-width: var(--aside-width); //Переменная меняется в лаяуте.
+  height: 100%;
+  width: 100%;
+  color: var(--text-100) !important;
+  gap: 10px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+  border-radius: 0 !important;
+  border-left: 3px solid transparent !important;
+  border-right: 3px solid transparent !important;
+
+  &.active {
+    border-left: 3px solid var(--primary-300) !important;
+    color: var(--primary-300) !important;
+    :local(.title) {
+      font-weight: bold;
+    }
+
+  }
+
+  .icon {
+    min-width: var(--def-aside-column-width);
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    svg{
+      transform: translateX(-3px);
+    }
+
+  }
+
+  .title {
+    font-size: 10px;
+    padding: 0 3px;
+    text-align: center;
+  }
+
+  &:not(.inline) {
+    display: grid !important;
+  }
+
+  &:local(&.inline) {
+    width: 100%;
+    justify-content: left;
+
+    :local(.title) {
+      text-align: left;
+      font-size: 14px;
+    }
+
+  }
+}
